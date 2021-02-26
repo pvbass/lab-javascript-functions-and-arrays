@@ -101,9 +101,9 @@ function avg(arr) {
 
 // exercise 5
 
-let filteredArr = [];
-
 function uniquifyArray(array) {
+
+    let filteredArr = [];
 
     for (let i = 0; i < array.length; i++) {
         let currentItem = array[i];
@@ -113,6 +113,7 @@ function uniquifyArray(array) {
     }
 
     if (array == false) return null;
+    if (array != false && JSON.stringify(filtered) === JSON.stringify(array)) return array; // this breaks more. not sure why
 
     return filteredArr;
 
