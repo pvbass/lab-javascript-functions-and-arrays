@@ -113,8 +113,7 @@ function uniquifyArray(array) {
     }
 
     if (array == false) return null;
-    if (array != false && JSON.stringify(filtered) === JSON.stringify(array)) return array; // this breaks more. not sure why
-
+    if (array == true && JSON.stringify(filtered) === JSON.stringify(array)) return array;
     return filteredArr;
 
 }
